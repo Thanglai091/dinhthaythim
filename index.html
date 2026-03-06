@@ -80,6 +80,14 @@
         <!-- Slides will be injected here -->
     </main>
 
+    <!-- Theme Toggle -->
+    <button id="themeToggle" class="absolute top-8 right-8 z-50 w-12 h-12 flex items-center justify-center bg-white/5 backdrop-blur-xl rounded-full border border-white/10 shadow-[0_10px_40px_rgba(0,0,0,0.5)] magnetic-btn text-gray-300 hover:text-amber-400 transition-colors cursor-pointer group">
+        <!-- Sun Icon (hidden by default in dark mode) -->
+        <svg class="sun-icon w-6 h-6 absolute opacity-0 scale-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+        <!-- Moon Icon (visible by default) -->
+        <svg class="moon-icon w-6 h-6 absolute opacity-100 scale-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+    </button>
+
     <!-- Navigation Overlay -->
     <nav class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-50 flex gap-6 bg-white/5 backdrop-blur-xl px-8 py-4 rounded-full border border-white/10 shadow-[0_10px_40px_rgba(0,0,0,0.8)]">
         <button id="prevBtn" class="magnetic-btn text-gray-400 hover:text-emerald-400 hover:drop-shadow-[0_0_8px_rgba(52,211,153,0.8)] transition-all cursor-pointer disabled:opacity-20 disabled:cursor-not-allowed">
@@ -100,8 +108,4 @@
 </body>
 </html>
 
-    <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script type="module" src="js/main.js"></script>
-</body>
-</html>
+

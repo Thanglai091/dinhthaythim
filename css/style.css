@@ -62,3 +62,213 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+/* ========================================= */
+/*       LIGHT MODE THEME OVERRIDES          */
+/* ========================================= */
+
+body.light-mode {
+    background-color: #f8fafc !important; /* Kem sứ */
+}
+
+/* Text Colors */
+body.light-mode .text-white {
+    color: #0f172a !important; /* Than đậm */
+}
+
+body.light-mode .text-gray-300 {
+    color: #334155 !important;
+}
+
+body.light-mode .text-gray-400 {
+    color: #475569 !important;
+}
+
+/* Glassmorphism Panels in Light Mode */
+body.light-mode .glass-panel {
+    background: rgba(0, 0, 0, 0.03) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Navigation controls in Light Mode */
+body.light-mode nav.bg-white\/5 {
+    background: rgba(0, 0, 0, 0.05) !important;
+    border-color: rgba(0,0,0,0.1) !important;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05) !important;
+}
+body.light-mode nav span, body.light-mode nav button svg {
+    color: #0f172a !important;
+}
+body.light-mode nav button:disabled {
+    opacity: 0.3 !important;
+}
+
+/* Theme Toggle Button */
+body.light-mode #themeToggle {
+    background: rgba(0, 0, 0, 0.05) !important;
+    border-color: rgba(0,0,0,0.1) !important;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08) !important;
+    color: #0f172a !important;
+}
+
+/* Spotlight & Ambient Backgrounds */
+body.light-mode .spotlight-overlay {
+    background: radial-gradient(
+        600px circle at var(--mouse-x) var(--mouse-y),
+        rgba(251, 191, 36, 0.15), /* Vàng nắng */
+        transparent 50%
+    ) !important;
+}
+
+body.light-mode #ambient-bg div:first-child {
+    background-image: linear-gradient(to bottom right, #f1f5f9, #ffffff, #e2e8f0) !important;
+    opacity: 0.9 !important;
+}
+
+body.light-mode #ambient-bg div:last-child {
+    filter: invert(1) opacity(0.05) !important; /* Đảo màu stardust */
+}
+
+/* Gradients Overrides (Mostly from Dark [#050908] / gray-900 to Transparent) */
+body.light-mode .from-\[\#050908\] {
+    --tw-gradient-from: #f8fafc var(--tw-gradient-from-position) !important;
+    --tw-gradient-to: rgba(248, 250, 252, 0) var(--tw-gradient-to-position) !important;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+body.light-mode .via-\[\#050908\] {
+    --tw-gradient-to: rgba(248, 250, 252, 0) var(--tw-gradient-to-position) !important;
+    --tw-gradient-stops: var(--tw-gradient-from), #f8fafc var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
+}
+
+body.light-mode .from-gray-900 {
+    --tw-gradient-from: #f8fafc var(--tw-gradient-from-position) !important;
+    --tw-gradient-to: rgba(248, 250, 252, 0) var(--tw-gradient-to-position) !important;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+body.light-mode .via-gray-900\/40 {
+    --tw-gradient-to: rgba(248, 250, 252, 0)  var(--tw-gradient-to-position) !important;
+    --tw-gradient-stops: var(--tw-gradient-from), rgba(248,250,252,0.8) var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
+}
+body.light-mode .to-gray-900 {
+    --tw-gradient-to: #f8fafc var(--tw-gradient-to-position) !important;
+}
+
+/* Fix text glowing / shadow for Light Mode */
+body.light-mode .text-shadow-glow {
+    text-shadow: 0 4px 15px rgba(0,0,0,0.15) !important;
+}
+
+body.light-mode .drop-shadow-2xl {
+    filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.15)) !important;
+}
+
+/* ========================================= */
+/*       SPECIFIC SLIDE OVERRIDES            */
+/* ========================================= */
+
+/* Clear hardcoded dark backgrounds */
+body.light-mode .bg-\[\#050908\],
+body.light-mode .bg-\[\#030706\],
+body.light-mode .bg-\[\#020504\],
+body.light-mode .bg-\[\#010302\],
+body.light-mode .bg-black {
+    background-color: transparent !important;
+}
+
+/* Slide 2: Interactive map filter revert */
+body.light-mode .iframe-map {
+    filter: none !important;
+}
+body.light-mode .map-float-tag {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Text Highlights mapping for light mode (darken them for contrast) */
+body.light-mode .text-emerald-100\/70,
+body.light-mode .text-emerald-100,
+body.light-mode .text-gray-100,
+body.light-mode .text-gray-200 {
+    color: #1e293b !important;
+}
+body.light-mode .text-emerald-300,
+body.light-mode .text-emerald-400,
+body.light-mode .text-emerald-500 {
+    color: #047857 !important; /* Darker Emerald */
+}
+body.light-mode .text-amber-200,
+body.light-mode .text-amber-300,
+body.light-mode .text-amber-400 {
+    color: #b45309 !important; /* Darker Amber */
+}
+body.light-mode .text-cyan-300,
+body.light-mode .text-cyan-400 {
+    color: #0369a1 !important; /* Darker Cyan */
+}
+body.light-mode .text-teal-200,
+body.light-mode .text-teal-300,
+body.light-mode .text-teal-400 {
+    color: #0f766e !important;
+}
+body.light-mode .text-rose-400,
+body.light-mode .text-rose-500 {
+    color: #e11d48 !important;
+}
+
+/* Gradient Texts mapping for light mode */
+body.light-mode .bg-clip-text.from-amber-200 {
+    background-image: linear-gradient(to bottom right, #b45309, #d97706, #78350f) !important;
+}
+body.light-mode .bg-clip-text.from-emerald-300 {
+    background-image: linear-gradient(to right, #047857, #0f766e, #0f172a) !important;
+}
+body.light-mode .bg-clip-text.from-emerald-400 {
+    background-image: linear-gradient(to right, #047857, #0f766e) !important;
+}
+
+/* Fix specific overlays and interactions */
+body.light-mode .thanks-mask {
+    background-color: #f8fafc !important; /* Match light bg */
+}
+body.light-mode .glow-pulse, 
+body.light-mode .glow-pulse-core {
+    mix-blend-mode: multiply !important;
+    opacity: 0.15 !important;
+}
+
+/* ========================================= */
+/*       GLOBAL TYPOGRAPHY TWEAKS            */
+/* ========================================= */
+/* Tăng nhẹ kích thước font chữ nhỏ trên toàn dự án (áp dụng chung 2 mode) */
+.text-xs { 
+    font-size: 13px !important; 
+    line-height: 1.5 !important; 
+}
+.text-sm { 
+    font-size: 15px !important; 
+    line-height: 1.6 !important; 
+}
+.text-base { 
+    font-size: 17px !important; 
+    line-height: 1.6 !important; 
+}
+
+/* ========================================= */
+/*     IMAGE CLARITY OVERRIDES (SLIDE 3,8)   */
+/* ========================================= */
+body.light-mode .slide3-overlay {
+    opacity: 0.8 !important;
+    background: linear-gradient(to top, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.7) 30%, transparent 100%) !important;
+}
+
+body.light-mode .slide8-main-overlay {
+    opacity: 0.8 !important;
+    background: linear-gradient(to top, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.4) 40%, transparent 100%) !important;
+}
+
+body.light-mode .bento-overlay {
+    opacity: 0.8 !important;
+    background: linear-gradient(to top, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.6) 50%, transparent 100%) !important;
+}

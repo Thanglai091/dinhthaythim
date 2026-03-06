@@ -178,4 +178,31 @@ window.addEventListener('keydown', (e) => {
     else if (e.key === 'ArrowLeft') prevSlide();
 });
 
+// Theme Toggle Logic
+const themeToggle = document.getElementById('themeToggle');
+const sunIcon = themeToggle.querySelector('.sun-icon');
+const moonIcon = themeToggle.querySelector('.moon-icon');
+
+// Check local storage for theme
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'light') {
+    document.body.classList.add('light-mode');
+    gsap.set(sunIcon, { opacity: 1, scale: 1, rotation: 0 });
+    gsap.set(moonIcon, { opacity: 0, scale: 0.5, rotation: -90 });
+}
+
+themeToggle.addEventListener('click', () => {
+    const isLightMode = document.body.classList.toggle('light-mode');
+    
+    if (isLightMode) {
+        localStorage.setItem('theme', 'light');
+        gsap.to(moonIcon, { opacity: 0, scale: 0.5, rotation: -90, duration: 0.5, ease: "back.in(1.5)" });
+        gsap.to(sunIcon, { opacity: 1, scale: 1, rotation: 0, duration: 0.5, ease: "back.out(1.5)", delay: 0.1 });
+    } else {
+        localStorage.setItem('theme', 'dark');
+        gsap.to(sunIcon, { opacity: 0, scale: 0.5, rotation: 90, duration: 0.5, ease: "back.in(1.5)" });
+        gsap.to(moonIcon, { opacity: 1, scale: 1, rotation: 0, duration: 0.5, ease: "back.out(1.5)", delay: 0.1 });
+    }
+});
+
 renderSlide(1, 'next');

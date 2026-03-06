@@ -5,8 +5,8 @@ const html = `
     <div class="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         
         <div class="image-section relative h-[500px] w-full rounded-3xl overflow-hidden glass-panel border border-white/20">
-            <div class="absolute inset-0 bg-[url('./assets/images/dinh-thay-thim-1.jpg')] bg-cover bg-center opacity-85 group-hover:scale-105 transition-transform duration-700"></div>
-            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent pointer-events-none"></div>
+            <div class="absolute inset-0 bg-[url('./assets/images/dinh-thay-thim-1.jpg')] bg-cover bg-center opacity-100 group-hover:scale-105 transition-transform duration-700"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 to-transparent pointer-events-none slide3-overlay"></div>
             
             <div class="absolute bottom-8 left-8 right-8">
                 <div class="w-16 h-1 w-full bg-emerald-500 rounded mb-4 max-w-[100px] origin-left decoration-line"></div>

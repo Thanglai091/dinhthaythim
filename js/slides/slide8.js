@@ -4,8 +4,8 @@ const html = `
 <div class="slide-container absolute inset-0 flex flex-col items-center justify-center p-4 lg:p-12 overflow-hidden">
     
     <!-- Organic Forest Overlay -->
-    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center mix-blend-overlay opacity-10 filter grayscale z-0"></div>
-    <div class="absolute inset-0 bg-gradient-to-t from-[#050908] via-[#050908]/90 to-transparent z-0"></div>
+    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center mix-blend-overlay opacity-[0.02] filter grayscale z-0"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-[#050908] via-[#050908]/70 to-transparent z-0 slide8-main-overlay"></div>
 
     <div class="w-full max-w-7xl h-full flex flex-col z-10 mt-10 relative">
         
@@ -21,8 +21,8 @@ const html = `
             
             <!-- Main Large Card -->
             <div class="bento-item lg:col-span-4 lg:row-span-2 relative group rounded-[2.5rem] overflow-hidden glass-panel border border-white/10 hover:border-emerald-500/30 transition-colors duration-700 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
-                <div class="absolute inset-0 bg-[url('./assets/images/b3e3a4564f8e30f071cc287f5e4aa40d.jpg')] bg-cover bg-center opacity-40 group-hover:scale-110 transition-transform duration-1000"></div>
-                <div class="absolute inset-0 bg-gradient-to-tr from-[#050908] via-[#050908]/60 to-transparent"></div>
+                <div class="absolute inset-0 bg-[url('./assets/images/b3e3a4564f8e30f071cc287f5e4aa40d.jpg')] bg-cover bg-center opacity-85 group-hover:scale-110 transition-transform duration-1000"></div>
+                <div class="absolute inset-0 bg-gradient-to-tr from-[#050908]/90 to-transparent bento-overlay"></div>
                 
                 <div class="absolute bottom-0 left-0 p-10 w-full lg:w-3/4">
                     <div class="w-14 h-14 bg-emerald-500/20 text-emerald-400 rounded-2xl flex items-center justify-center mb-6 shadow-[0_0_20px_rgba(52,211,153,0.3)]">
@@ -35,8 +35,8 @@ const html = `
             
             <!-- Small Card 1: Dragon Fruit -->
             <div class="bento-item lg:col-span-2 lg:row-span-1 relative group rounded-3xl overflow-hidden glass-panel border border-white/10 hover:border-rose-500/40 transition-colors duration-500 hover:shadow-[0_0_40px_rgba(244,63,94,0.15)] flex flex-col justify-end p-8">
-                <div class="absolute inset-0 bg-[url('./assets/images/h26.jpg')] bg-cover bg-center opacity-30 group-hover:scale-110 transition-transform duration-1000 filter sepia-[20%]"></div>
-                <div class="absolute inset-0 bg-gradient-to-t from-[#050908] to-transparent"></div>
+                <div class="absolute inset-0 bg-[url('./assets/images/h26.jpg')] bg-cover bg-center opacity-80 group-hover:scale-110 transition-transform duration-1000"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#050908]/90 to-transparent bento-overlay"></div>
                 
                 <div class="relative z-10">
                     <div class="flex items-center mb-3">
@@ -49,8 +49,8 @@ const html = `
             
             <!-- Small Card 2: Longan -->
             <div class="bento-item lg:col-span-2 lg:row-span-1 relative group rounded-3xl overflow-hidden glass-panel border border-white/10 hover:border-amber-500/40 transition-colors duration-500 hover:shadow-[0_0_40px_rgba(251,191,36,0.15)] flex flex-col justify-end p-8">
-                <div class="absolute inset-0 bg-[url('./assets/images/vuon-nhan-vinh-tuy-toa-do-song-ao-dep-het-nac-giua-long-thu-do-1-1640050576.jpg')] bg-cover bg-center opacity-30 group-hover:scale-110 transition-transform duration-1000 filter sepia-[20%]"></div>
-                <div class="absolute inset-0 bg-gradient-to-t from-[#050908] to-transparent"></div>
+                <div class="absolute inset-0 bg-[url('./assets/images/vuon-nhan-vinh-tuy-toa-do-song-ao-dep-het-nac-giua-long-thu-do-1-1640050576.jpg')] bg-cover bg-center opacity-80 group-hover:scale-110 transition-transform duration-1000"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#050908]/90 to-transparent bento-overlay"></div>
                 
                 <div class="relative z-10">
                     <div class="flex items-center mb-3">
