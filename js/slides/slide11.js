@@ -68,41 +68,41 @@ const html = `
         <div class="lg:col-span-8 relative h-[80vh] w-full z-20 layout-right-clusters">
             
             <!-- Cluster 1: Hợp tác xã (Top Left of Right Col) -->
-            <div class="text-cluster absolute top-[-5%] lg:top-[0%] left-[0%] lg:left-[5%] max-w-[320px] xl:max-w-md float-item backdrop-blur-md bg-white/5 rounded-2xl border border-white/5 p-6">
+            <div class="text-cluster absolute top-[5%] lg:top-[5%] left-[0%] lg:left-[5%] max-w-[320px] xl:max-w-md float-item backdrop-blur-md bg-white/5 rounded-2xl border border-white/5 p-6 z-30">
                 <div class="overflow-hidden mb-2">
-                    <h3 class="cluster-title text-xl lg:text-2xl font-playfair font-bold text-white flex items-center transform translate-y-full">
+                    <h3 class="cluster-title text-xl lg:text-2xl font-playfair font-bold text-emerald-500 lg:text-white flex items-center transform translate-y-full">
                         <span class="w-6 h-[1px] bg-emerald-500 mr-2 shadow-[0_0_10px_rgba(16,185,129,0.8)]"></span>
                         Hợp Tác Xã Du Lịch
                     </h3>
                 </div>
                 <p class="cluster-text text-gray-300 text-xs xl:text-sm leading-relaxed font-light tracking-wide opacity-0 blur-filter">
-                    <span class="float-left text-4xl lg:text-5xl font-playfair font-black text-emerald-400 pr-2 pt-1 leading-[0.8] drop-shadow-[0_0_15px_rgba(52,211,153,0.4)]">X</span>ây dựng mô hình du lịch dựa vào cộng đồng. Người dân không chỉ cung cấp dịch vụ, mà được đào tạo thành <span class="text-white font-medium">"Đại sứ văn hóa"</span>, trực tiếp kể lại huyền tích <span class="text-amber-300">Thầy Thím</span> bằng sự chân thành.
+                    <span class="float-left text-4xl lg:text-5xl font-playfair font-black text-emerald-400 pr-2 pt-1 leading-[0.8] drop-shadow-[0_0_15px_rgba(52,211,153,0.4)]">X</span>ây dựng mô hình du lịch dựa vào cộng đồng. Người dân không chỉ cung cấp dịch vụ, mà được đào tạo thành <span class="text-emerald-500 font-bold">"Đại sứ văn hóa"</span>, trực tiếp kể lại huyền tích <span class="text-amber-500 font-bold">Thầy Thím</span> bằng sự chân thành.
                 </p>
             </div>
 
             <!-- Cluster 2: Hành Hương Xanh (Middle Right) -->
-            <div class="text-cluster absolute top-[45%] lg:top-[40%] right-[0%] lg:right-[-5%] xl:right-[5%] max-w-[320px] xl:max-w-md float-item backdrop-blur-md bg-white/5 rounded-2xl border border-white/5 p-6" style="animation-delay: -1.5s;">
+            <div class="text-cluster absolute top-[35%] lg:top-[38%] right-[0%] lg:right-[-5%] xl:right-[0%] max-w-[320px] xl:max-w-md float-item backdrop-blur-md bg-white/5 rounded-2xl border border-white/5 p-6 z-30" style="animation-delay: -1.5s;">
                 <div class="overflow-hidden mb-2">
-                    <h3 class="cluster-title text-xl lg:text-2xl font-playfair font-bold text-white flex items-center justify-end transform translate-y-full">
+                    <h3 class="cluster-title text-xl lg:text-2xl font-playfair font-bold text-teal-600 lg:text-white flex items-center justify-end transform translate-y-full">
                         Hành Hương Xanh
                         <span class="w-6 h-[1px] bg-teal-400 ml-2 shadow-[0_0_10px_rgba(45,212,191,0.8)]"></span>
                     </h3>
                 </div>
                 <p class="cluster-text text-gray-300 text-xs xl:text-sm leading-relaxed font-light tracking-wide text-right opacity-0 blur-filter">
-                    Thay đổi thói quen tín ngưỡng, khuyến khích <span class="text-teal-300 font-medium">dâng lễ nhẹ nhàng, thân thiện</span> môi trường thay vì đốt vàng mã. Bố trí trạm lọc nước sạch để giảm thiểu <span class="text-white">rác thải nhựa</span>.
+                    Thay đổi thói quen tín ngưỡng, khuyến khích <span class="text-teal-600 font-bold">dâng lễ nhẹ nhàng, thân thiện</span> môi trường thay vì đốt vàng mã. Bố trí trạm lọc nước sạch để giảm thiểu rác thải nhựa.
                 </p>
             </div>
 
             <!-- Cluster 3: Marketing 4.0 (Bottom Left) -->
-            <div class="text-cluster absolute bottom-[-15%] xl:bottom-[-20%] left-[5%] xl:left-[15%] max-w-[320px] xl:max-w-md float-item backdrop-blur-md bg-white/5 rounded-2xl border border-white/5 p-6" style="animation-delay: -3s;">
+            <div class="text-cluster absolute bottom-[10%] lg:bottom-[15%] left-[5%] xl:left-[10%] max-w-[320px] xl:max-w-md float-item backdrop-blur-md bg-white/5 rounded-2xl border border-white/5 p-6 z-30" style="animation-delay: -3s;">
                 <div class="overflow-hidden mb-2">
-                    <h3 class="cluster-title text-xl lg:text-2xl font-playfair font-bold text-white flex items-center transform translate-y-full">
+                    <h3 class="cluster-title text-xl lg:text-2xl font-playfair font-bold text-amber-500 lg:text-white flex items-center transform translate-y-full">
                         <span class="w-6 h-[1px] bg-amber-400 mr-2 shadow-[0_0_10px_rgba(251,191,36,0.8)]"></span>
                         Marketing 4.0
                     </h3>
                 </div>
                 <p class="cluster-text text-gray-300 text-xs xl:text-sm leading-relaxed font-light tracking-wide opacity-0 blur-filter">
-                    Thiết kế thước phim ngắn <span class="text-amber-200 font-medium">đậm chất điện ảnh</span> về vẻ đẹp La Gi trên TikTok, Facebook. Kết hợp cùng <span class="text-emerald-300">KOLs du lịch trải nghiệm</span> để lan tỏa cảm xúc chân thực, thay vì quảng cáo suông.
+                    Thiết kế thước phim ngắn <span class="text-amber-500 font-bold">đậm chất điện ảnh</span> về vẻ đẹp La Gi trên TikTok, Facebook. Kết hợp cùng <span class="text-emerald-500 font-bold">KOLs du lịch trải nghiệm</span> để lan tỏa cảm xúc chân thực, thay vì quảng cáo suông.
                 </p>
             </div>
 
