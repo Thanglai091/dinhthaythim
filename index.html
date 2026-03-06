@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quy hoạch du lịch nông thôn – di sản dinh thầy thím</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+    <style>
+        /* Define global mouse variables for dynamic lighting */
+        :root {
+            --mouse-x: 50%;
+            --mouse-y: 50%;
+        }
+        
+        .spotlight-overlay {
+            background: radial-gradient(
+                600px circle at var(--mouse-x) var(--mouse-y),
+                rgba(212, 175, 55, 0.15), /* Vàng đồng huyền bí */
+                transparent 40%
+            );
+            pointer-events: none;
+            z-index: 5;
+            position: absolute;
+            inset: 0;
+            transition: background 0.15s ease-out;
+        }
+
+        /* Glassmorphism 2.0 override */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+            /* Interaction glow */
+            position: relative;
+        }
+        
+        .glass-panel::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            padding: 1px;
+            background: radial-gradient(
+                400px circle at var(--mouse-x) var(--mouse-y),
+                rgba(255, 255, 255, 0.3),
+                transparent 40%
+            );
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+
+        .text-glow {
+            text-shadow: 0 0 20px currentColor;
+        }
+    </style>
+</head>
+<body class="bg-[#050908] text-white font-['Inter'] overflow-hidden w-screen h-screen relative">
+    
+    <!-- Ambient background -->
+    <div id="ambient-bg" class="absolute inset-0 z-0 opacity-40">
+        <div class="absolute inset-0 bg-gradient-to-br from-[#0a1f18] via-[#050908] to-[#122416]"></div>
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-30 mix-blend-color-dodge"></div>
+    </div>
+
+    <!-- Particles Layer -->
+    <canvas id="particles-canvas" class="absolute inset-0 z-[1] opacity-60"></canvas>
+
+    <!-- Interactive Spotlight Overlay -->
+    <div class="spotlight-overlay"></div>
+
+    <!-- Main Container -->
+    <main id="app-container" class="relative z-10 w-full h-full flex items-center justify-center">
+        <!-- Slides will be injected here -->
+    </main>
+
+    <!-- Navigation Overlay -->
+    <nav class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-50 flex gap-6 bg-white/5 backdrop-blur-xl px-8 py-4 rounded-full border border-white/10 shadow-[0_10px_40px_rgba(0,0,0,0.8)]">
+        <button id="prevBtn" class="magnetic-btn text-gray-400 hover:text-emerald-400 hover:drop-shadow-[0_0_8px_rgba(52,211,153,0.8)] transition-all cursor-pointer disabled:opacity-20 disabled:cursor-not-allowed">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+        </button>
+        <div class="text-sm font-bold tracking-[0.2em] text-gray-300 flex items-center">
+            <span id="slide-indicator">1 / 12</span>
+        </div>
+        <button id="nextBtn" class="magnetic-btn text-gray-400 hover:text-emerald-400 hover:drop-shadow-[0_0_8px_rgba(52,211,153,0.8)] transition-all cursor-pointer disabled:opacity-20 disabled:cursor-not-allowed">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+        </button>
+    </nav>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
