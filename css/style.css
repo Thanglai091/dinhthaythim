@@ -245,16 +245,16 @@ body.light-mode .glow-pulse-core {
 /* ========================================= */
 /* Tăng nhẹ kích thước font chữ nhỏ trên toàn dự án (áp dụng chung 2 mode) */
 .text-xs { 
-    font-size: 15px !important; 
-    line-height: 1.6 !important; 
-}
-.text-sm { 
     font-size: 17px !important; 
     line-height: 1.65 !important; 
 }
-.text-base { 
+.text-sm { 
     font-size: 19px !important; 
     line-height: 1.7 !important; 
+}
+.text-base { 
+    font-size: 21px !important; 
+    line-height: 1.75 !important; 
 }
 
 /* ========================================= */
