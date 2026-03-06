@@ -68,9 +68,9 @@ const html = `
         <div class="lg:col-span-8 relative h-[80vh] w-full z-20 layout-right-clusters">
             
             <!-- Cluster 1: Hợp tác xã (Top Left of Right Col) -->
-            <div class="text-cluster absolute top-[5%] lg:top-[5%] left-[0%] lg:left-[5%] max-w-[320px] xl:max-w-md float-item backdrop-blur-md bg-white/5 rounded-2xl border border-white/5 p-6 z-30">
+            <div class="text-cluster absolute top-[0%] lg:top-[2%] left-[0%] lg:left-[2%] max-w-[320px] xl:max-w-md float-item backdrop-blur-md bg-white/5 rounded-2xl border border-white/5 p-6 z-30">
                 <div class="overflow-hidden mb-2">
-                    <h3 class="cluster-title text-xl lg:text-2xl font-playfair font-bold text-emerald-500 lg:text-white flex items-center transform translate-y-full">
+                    <h3 class="cluster-title text-xl lg:text-2xl font-playfair font-bold text-emerald-100 flex items-center transform translate-y-full">
                         <span class="w-6 h-[1px] bg-emerald-500 mr-2 shadow-[0_0_10px_rgba(16,185,129,0.8)]"></span>
                         Hợp Tác Xã Du Lịch
                     </h3>
@@ -81,9 +81,9 @@ const html = `
             </div>
 
             <!-- Cluster 2: Hành Hương Xanh (Middle Right) -->
-            <div class="text-cluster absolute top-[35%] lg:top-[38%] right-[0%] lg:right-[-5%] xl:right-[0%] max-w-[320px] xl:max-w-md float-item backdrop-blur-md bg-white/5 rounded-2xl border border-white/5 p-6 z-30" style="animation-delay: -1.5s;">
+            <div class="text-cluster absolute top-[35%] lg:top-[35%] right-[-5%] lg:right-[-8%] xl:right-[-5%] max-w-[320px] xl:max-w-md float-item backdrop-blur-md bg-white/5 rounded-2xl border border-white/5 p-6 z-30" style="animation-delay: -1.5s;">
                 <div class="overflow-hidden mb-2">
-                    <h3 class="cluster-title text-xl lg:text-2xl font-playfair font-bold text-teal-600 lg:text-white flex items-center justify-end transform translate-y-full">
+                    <h3 class="cluster-title text-xl lg:text-2xl font-playfair font-bold text-teal-200 flex items-center justify-end transform translate-y-full">
                         Hành Hương Xanh
                         <span class="w-6 h-[1px] bg-teal-400 ml-2 shadow-[0_0_10px_rgba(45,212,191,0.8)]"></span>
                     </h3>
@@ -94,9 +94,9 @@ const html = `
             </div>
 
             <!-- Cluster 3: Marketing 4.0 (Bottom Left) -->
-            <div class="text-cluster absolute bottom-[10%] lg:bottom-[15%] left-[5%] xl:left-[10%] max-w-[320px] xl:max-w-md float-item backdrop-blur-md bg-white/5 rounded-2xl border border-white/5 p-6 z-30" style="animation-delay: -3s;">
+            <div class="text-cluster absolute bottom-[5%] lg:bottom-[8%] left-[0%] xl:left-[5%] max-w-[320px] xl:max-w-md float-item backdrop-blur-md bg-white/5 rounded-2xl border border-white/5 p-6 z-30" style="animation-delay: -3s;">
                 <div class="overflow-hidden mb-2">
-                    <h3 class="cluster-title text-xl lg:text-2xl font-playfair font-bold text-amber-500 lg:text-white flex items-center transform translate-y-full">
+                    <h3 class="cluster-title text-xl lg:text-2xl font-playfair font-bold text-amber-200 flex items-center transform translate-y-full">
                         <span class="w-6 h-[1px] bg-amber-400 mr-2 shadow-[0_0_10px_rgba(251,191,36,0.8)]"></span>
                         Marketing 4.0
                     </h3>
