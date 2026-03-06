@@ -68,7 +68,7 @@ const html = `
         <div class="lg:col-span-8 relative h-[80vh] w-full z-20 layout-right-clusters">
             
             <!-- Cluster 1: Hợp tác xã (Top Left of Right Col) -->
-            <div class="text-cluster absolute top-[5%] lg:top-[5%] left-[0%] lg:left-[5%] max-w-[320px] xl:max-w-sm float-item backdrop-blur-md bg-white/5 rounded-2xl border border-white/5 p-6">
+            <div class="text-cluster absolute top-[-5%] lg:top-[0%] left-[0%] lg:left-[5%] max-w-[320px] xl:max-w-md float-item backdrop-blur-md bg-white/5 rounded-2xl border border-white/5 p-6">
                 <div class="overflow-hidden mb-2">
                     <h3 class="cluster-title text-xl lg:text-2xl font-playfair font-bold text-white flex items-center transform translate-y-full">
                         <span class="w-6 h-[1px] bg-emerald-500 mr-2 shadow-[0_0_10px_rgba(16,185,129,0.8)]"></span>
@@ -81,7 +81,7 @@ const html = `
             </div>
 
             <!-- Cluster 2: Hành Hương Xanh (Middle Right) -->
-            <div class="text-cluster absolute top-[38%] lg:top-[35%] right-[0%] lg:right-[2%] max-w-[320px] xl:max-w-sm float-item backdrop-blur-md bg-white/5 rounded-2xl border border-white/5 p-6" style="animation-delay: -1.5s;">
+            <div class="text-cluster absolute top-[45%] lg:top-[40%] right-[0%] lg:right-[-5%] xl:right-[5%] max-w-[320px] xl:max-w-md float-item backdrop-blur-md bg-white/5 rounded-2xl border border-white/5 p-6" style="animation-delay: -1.5s;">
                 <div class="overflow-hidden mb-2">
                     <h3 class="cluster-title text-xl lg:text-2xl font-playfair font-bold text-white flex items-center justify-end transform translate-y-full">
                         Hành Hương Xanh
@@ -94,7 +94,7 @@ const html = `
             </div>
 
             <!-- Cluster 3: Marketing 4.0 (Bottom Left) -->
-            <div class="text-cluster absolute bottom-[5%] lg:bottom-[8%] left-[10%] lg:left-[25%] max-w-[320px] xl:max-w-sm float-item backdrop-blur-md bg-white/5 rounded-2xl border border-white/5 p-6" style="animation-delay: -3s;">
+            <div class="text-cluster absolute bottom-[-15%] xl:bottom-[-20%] left-[5%] xl:left-[15%] max-w-[320px] xl:max-w-md float-item backdrop-blur-md bg-white/5 rounded-2xl border border-white/5 p-6" style="animation-delay: -3s;">
                 <div class="overflow-hidden mb-2">
                     <h3 class="cluster-title text-xl lg:text-2xl font-playfair font-bold text-white flex items-center transform translate-y-full">
                         <span class="w-6 h-[1px] bg-amber-400 mr-2 shadow-[0_0_10px_rgba(251,191,36,0.8)]"></span>

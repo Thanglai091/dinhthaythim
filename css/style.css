@@ -85,8 +85,9 @@ body.light-mode .text-gray-400 {
 }
 
 /* Glassmorphism Panels in Light Mode */
-body.light-mode .glass-panel {
-    background: rgba(0, 0, 0, 0.03) !important;
+body.light-mode .glass-panel,
+body.light-mode .text-cluster {
+    background: rgba(255, 255, 255, 0.7) !important;
     backdrop-filter: blur(20px) !important;
     border: 1px solid rgba(0, 0, 0, 0.08) !important;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05) !important;
