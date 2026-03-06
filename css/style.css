@@ -212,9 +212,11 @@ body.light-mode .text-teal-300,
 body.light-mode .text-teal-400 {
     color: #0f766e !important;
 }
+
+body.light-mode .text-rose-300,
 body.light-mode .text-rose-400,
 body.light-mode .text-rose-500 {
-    color: #e11d48 !important;
+    color: #be123c !important; /* Đỏ đô cực đậm rực để rõ dấu ! */
 }
 
 /* Gradient Texts mapping for light mode */
@@ -243,16 +245,16 @@ body.light-mode .glow-pulse-core {
 /* ========================================= */
 /* Tăng nhẹ kích thước font chữ nhỏ trên toàn dự án (áp dụng chung 2 mode) */
 .text-xs { 
-    font-size: 13px !important; 
-    line-height: 1.5 !important; 
-}
-.text-sm { 
     font-size: 15px !important; 
     line-height: 1.6 !important; 
 }
-.text-base { 
+.text-sm { 
     font-size: 17px !important; 
-    line-height: 1.6 !important; 
+    line-height: 1.65 !important; 
+}
+.text-base { 
+    font-size: 19px !important; 
+    line-height: 1.7 !important; 
 }
 
 /* ========================================= */
